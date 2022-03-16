@@ -1,0 +1,26 @@
+Register, armani
+Login, tiwi
+Register Pet, tiwi
+Confirm Pet Registration, armani
+View Lost Pets, armani
+Log Out, tiwi
+
+Request Adoption, Armani
+Confirm Adoption Request, Armani
+Lost Pet Claim, Tiwi
+Confirm Lost Pet Claim, Tiwi
+Request Donation, armani
+Donate, tiwi
+View Pet Details, Armani
+View Pet Shelters, Tiwi
+View All Pets, Armani
+View All Pet in Pet Shelters, Tiwi
+
+Manage Profile, Tiwi
+Request Volunteer, armani
+Accept Request, armani
+Create Medical Report, tiwi
+Update Medical Report, tiwi
+Update Pet Information, Armani
+View Donate History, tiwi
+View Activity History, armani
