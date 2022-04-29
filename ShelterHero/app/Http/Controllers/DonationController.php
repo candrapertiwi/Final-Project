@@ -10,6 +10,11 @@ use Illuminate\Support\Facades\DB;
 
 class DonationController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('verified');
+        $this->middleware('petShelter')->except('index', 'show');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -24,7 +29,7 @@ class DonationController extends Controller
         }
         else if (auth()->user()->role === 'pet_shelter') {
             $allDonations = DB::table('donations')
-                ->where([['shelter_id', '=', auth()->user()->id], ['expiry_date', '>', Carbon::now()]])->latest()->get();
+                ->where('shelter_id', '=', auth()->user()->id)->latest()->get();
             return view('general.donation-view', compact('allDonations'));
         }
         else {
